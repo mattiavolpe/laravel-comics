@@ -8,5 +8,5 @@
 @endsection
 
 @section("pageTitle")
-
+Comics
 @endsection
