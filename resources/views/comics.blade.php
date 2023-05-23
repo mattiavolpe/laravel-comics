@@ -1,44 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container py-5 position-relative text-center">
-    <h4 id="page_section" class="text-white bg-primary py-3 px-5 fw-bold">CURRENT SERIES</h4>
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 g-4 text-start" id="comics_showcase">
-        @foreach($comics as $comic)
-        <div class="col">
-            <div class="card border-0 rounded-0 bg-transparent text-white text-uppercase">
-                <img src="{{ $comic['thumb'] }}" class="card-img-top"></img>
-                <h6 class="mb-0 fw-normal py-3">{{ $comic['series'] }}</h6>
-            </div>
-        </div>
-        @endforeach
-    </div>
-    <a id="load_more_comics" class="text-white bg-primary py-2 px-5 fw-bold d-block mt-4" href="#">LOAD MORE</a>
-</div>
-<div class="bg-primary py-5">
-    <div class="container d-flex justify-content-between align-items-center text-white">
-        <div class="d-flex align-items-center gap-4">
-            <img height="50" src="{{ Vite::asset('resources/img/buy-comics-digital-comics.png') }}" alt="">
-            <span>DIGITAL COMICS</span>
-        </div>
-        <div class="d-flex align-items-center gap-4">
-            <img height="50" src="{{ Vite::asset('resources/img/buy-comics-merchandise.png') }}" alt="">
-            <span>DC MERCHANDISE</span>
-        </div>
-        <div class="d-flex align-items-center gap-4">
-            <img height="50" src="{{ Vite::asset('resources/img/buy-comics-subscriptions.png') }}" alt="">
-            <span>SUBSCRIPTION</span>
-        </div>
-        <div class="d-flex align-items-center gap-4">
-            <img height="50" src="{{ Vite::asset('resources/img/buy-comics-shop-locator.png') }}" alt="">
-            <span>COMIC SHOP LOCATOR</span>
-        </div>
-        <div class="d-flex align-items-center gap-4">
-            <img height="50" src="{{ Vite::asset('resources/img/buy-dc-power-visa.png') }}" alt="">
-            <span>DC POWER VISA</span>
-        </div>
-    </div>
-</div>
+
+@include("partials/comicsShowcase")
+@include("partials/dcSitesBanner")
+
 @endsection
 
 @section("pageTitle")
