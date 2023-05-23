@@ -37,6 +37,13 @@ body {
     background-position: top center;
     }
 
+    #page_section {
+      position: absolute;
+      left: 0;
+      top: 0;
+      transform: translate(0, -50%);
+    }
+
     #comics_showcase {
 
       .card-img-top {
@@ -44,6 +51,11 @@ body {
         object-fit: cover;
         object-position: top;
       }
+    }
+
+    #load_more_comics {
+      width: fit-content;
+      margin: 0 auto;
     }
   }
 
