@@ -60,3 +60,14 @@ Route::get('/news', function () {
 Route::get('/shop', function () {
     return view('shop');
 })->name("shop");
+
+Route::get('/singleComic', function () {
+    $data = [
+        "db" => [
+            "comics" => config("db.comics"),
+            "pages" => config("db.pages"),
+            "footerLinks" => config("db.footerLinks")
+        ]
+    ];
+    return view('singleComic', $data);
+})->name("singleComic");
