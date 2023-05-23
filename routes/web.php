@@ -61,8 +61,15 @@ Route::get('/', function () {
                 "DC Universe",
                 "DC Power Visa"
             ]
-            ],
-            "comics" => config("db.comics")
+        ],
+        "dcSitesBanner" => [
+            "digital comics" => "buy-comics-digital-comics.png",
+            "dc merchandise" => "buy-comics-merchandise.png",
+            "subscription" => "buy-comics-subscriptions.png",
+            "comic shop locator" => "buy-comics-shop-locator.png",
+            "dc power visa" => "buy-dc-power-visa.png",
+        ],
+        "comics" => config("db.comics")
     ];
     return view('comics', $data);
 })->name("comics");
