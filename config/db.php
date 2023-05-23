@@ -214,4 +214,58 @@ return [
       ],
     ]
   ],
+  "pages" => [
+    "characters",
+    "comics",
+    "movies",
+    "tv",
+    "games",
+    "collectibles",
+    "videos",
+    "fans",
+    "news",
+    "shop"
+  ],
+  "footerLinks" => [
+    "dc comics" => [
+        "Characters",
+        "Comics",
+        "Movies",
+        "TV",
+        "Games",
+        "Videos",
+        "News"
+    ],
+    "shop" => [
+        "Shop DC",
+        "Shop DC Collectibles"
+    ],
+    "dc" => [
+        "Terms Of Use",
+        "Privacy policy (New)",
+        "Ad Choices",
+        "Advertising",
+        "Jobs",
+        "Subscriptions",
+        "Talent Workshops",
+        "CPSC Certificates",
+        "Ratings",
+        "Shop Help",
+        "Contact Us"
+    ],
+    "sites" => [
+        "DC",
+        "MAD Magazine",
+        "DC Kids",
+        "DC Universe",
+        "DC Power Visa"
+    ]
+  ],
+  "dcSitesBanner" => [
+    "digital comics" => "buy-comics-digital-comics.png",
+    "dc merchandise" => "buy-comics-merchandise.png",
+    "subscription" => "buy-comics-subscriptions.png",
+    "comic shop locator" => "buy-comics-shop-locator.png",
+    "dc power visa" => "buy-dc-power-visa.png",
+  ]
 ];

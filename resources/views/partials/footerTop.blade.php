@@ -4,7 +4,7 @@
       <div>
         <h4 class="text-uppercase text-white fw-bold my-3">DC COMICS</h4>
         <ul>
-          @foreach($footerLinks["dc comics"] as $page)
+          @foreach($db["footerLinks"]["dc comics"] as $page)
           <li>
             <a class="text-secondary" href="#">{{ $page }}</a>
           </li>
@@ -12,7 +12,7 @@
         </ul>
         <h4 class="text-uppercase text-white fw-bold my-3">SHOP</h4>
         <ul>
-          @foreach($footerLinks["shop"] as $page)
+          @foreach($db["footerLinks"]["shop"] as $page)
           <li>
             <a class="text-secondary" href="#">{{ $page }}</a>
           </li>
@@ -22,7 +22,7 @@
       <div>
         <h4 class="text-uppercase text-white fw-bold my-3">DC</h4>
         <ul>
-          @foreach($footerLinks["dc"] as $page)
+          @foreach($db["footerLinks"]["dc"] as $page)
           <li>
             <a class="text-secondary" href="#">{{ $page }}</a>
           </li>
@@ -32,7 +32,7 @@
       <div>
         <h4 class="text-uppercase text-white fw-bold my-3">SITES</h4>
         <ul>
-          @foreach($footerLinks["sites"] as $page)
+          @foreach($db["footerLinks"]["sites"] as $page)
           <li>
             <a class="text-secondary" href="#">{{ $page }}</a>
           </li>

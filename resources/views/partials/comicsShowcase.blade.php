@@ -1,7 +1,7 @@
 <div class="container py-5 position-relative text-center">
     <h4 id="page_section" class="text-white bg-primary py-3 px-5 fw-bold">CURRENT SERIES</h4>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 g-4 text-start" id="comics_showcase">
-        @foreach($comics as $comic)
+        @foreach($db["comics"] as $comic)
         <div class="col">
             <div class="card border-0 rounded-0 bg-transparent text-white text-uppercase">
                 <img src="{{ $comic['thumb'] }}" class="card-img-top"></img>
