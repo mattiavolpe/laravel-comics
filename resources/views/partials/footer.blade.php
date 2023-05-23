@@ -1,6 +1,6 @@
 <footer id="app_footer">
   <div id="footer_top" class="py-5">
-    <div class="container">
+    <div class="container position-relative">
       <div id="footer_links_wrapper" class="d-flex gap-5">
         <div>
           <h4 class="text-uppercase text-white fw-bold my-3">DC COMICS</h4>
@@ -47,11 +47,25 @@
       <p class="mb-0">
         <a href="#">Cookies Settings</a>
       </p>
+      <div id="footer_dc_logo_wrapper">
+        <img width="650" src="{{ Vite::asset('resources/img/dc-logo-bg.png') }}" alt="">
+      </div>
     </div>
   </div>
   <!-- /#footer_top -->
-  <div id="footer_bottom"></div>
-
+  <div id="footer_bottom" class="bg-dark py-4">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a id="sign_up" href="#" class="border-primary text-white">SIGN-UP NOW!</a>
+      <div class="d-flex align-items-center gap-3">
+        <h2 class="text-primary mb-0">FOLLOW US</h2>
+        <img src="{{ Vite::asset('resources/img/footer-facebook.png') }}" alt="">
+        <img src="{{ Vite::asset('resources/img/footer-twitter.png') }}" alt="">
+        <img src="{{ Vite::asset('resources/img/footer-youtube.png') }}" alt="">
+        <img src="{{ Vite::asset('resources/img/footer-pinterest.png') }}" alt="">
+        <img src="{{ Vite::asset('resources/img/footer-periscope.png') }}" alt="">
+      </div>
+    </div>
+  </div>
   <!-- /#footer_bottom -->
 </footer>
 <!-- /#app_footer -->

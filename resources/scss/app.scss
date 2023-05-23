@@ -43,6 +43,22 @@ body {
     #footer_top {
       background-image: url('../img/footer-bg.jpg');
       background-size: cover;
+      overflow: hidden;
+      
+      #footer_dc_logo_wrapper {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+      }
+    }
+
+    #footer_bottom {
+
+      #sign_up {
+        padding: 1rem 1rem;
+        border: 2px solid;
+      }
     }
   }
 
