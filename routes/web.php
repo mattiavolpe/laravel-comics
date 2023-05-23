@@ -61,7 +61,8 @@ Route::get('/', function () {
                 "DC Universe",
                 "DC Power Visa"
             ]
-        ]
+            ],
+            "comics" => config("db.comics")
     ];
     return view('comics', $data);
 })->name("comics");
