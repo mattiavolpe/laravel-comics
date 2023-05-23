@@ -6,6 +6,7 @@ body {
   ul {
     margin-bottom: 0;
     list-style: none;
+    padding: 0;
   }
 
   a {
@@ -28,11 +29,21 @@ body {
     }
   }
 
-  #jumbotron {
+  main {
+    #jumbotron {
     height: 400px;
     background-image: url('../img/jumbotron.jpg');
     background-size: cover;
     background-position: top center;
+    }
+  }
+
+  footer {
+
+    #footer_top {
+      background-image: url('../img/footer-bg.jpg');
+      background-size: cover;
+    }
   }
 
 }
