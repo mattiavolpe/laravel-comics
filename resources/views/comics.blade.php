@@ -15,6 +15,30 @@
     </div>
     <a id="load_more_comics" class="text-white bg-primary py-2 px-5 fw-bold d-block mt-4" href="#">LOAD MORE</a>
 </div>
+<div class="bg-primary py-5">
+    <div class="container d-flex justify-content-between align-items-center text-white">
+        <div class="d-flex align-items-center gap-4">
+            <img height="50" src="{{ Vite::asset('resources/img/buy-comics-digital-comics.png') }}" alt="">
+            <span>DIGITAL COMICS</span>
+        </div>
+        <div class="d-flex align-items-center gap-4">
+            <img height="50" src="{{ Vite::asset('resources/img/buy-comics-merchandise.png') }}" alt="">
+            <span>DC MERCHANDISE</span>
+        </div>
+        <div class="d-flex align-items-center gap-4">
+            <img height="50" src="{{ Vite::asset('resources/img/buy-comics-subscriptions.png') }}" alt="">
+            <span>SUBSCRIPTION</span>
+        </div>
+        <div class="d-flex align-items-center gap-4">
+            <img height="50" src="{{ Vite::asset('resources/img/buy-comics-shop-locator.png') }}" alt="">
+            <span>COMIC SHOP LOCATOR</span>
+        </div>
+        <div class="d-flex align-items-center gap-4">
+            <img height="50" src="{{ Vite::asset('resources/img/buy-dc-power-visa.png') }}" alt="">
+            <span>DC POWER VISA</span>
+        </div>
+    </div>
+</div>
 @endsection
 
 @section("pageTitle")

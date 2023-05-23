@@ -7,7 +7,10 @@
         <img height="80" src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="DC Logo">
       </div>
       @include("partials.headerLinks")
-      <input type="search" name="searchComics" id="searchComics" class="border-primary">
+      <div id="search_wrapper" class="position-relative">
+        <input type="search" placeholder="Search" name="searchComics" id="searchComics" class="border-primary">
+        <i class="fa-solid fa-magnifying-glass fa-fw" id="searchIcon"></i>
+      </div>
     </div>
   </div>
   <!-- /#header_links -->
