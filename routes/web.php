@@ -25,40 +25,94 @@ Route::get('/', function () {
     return view('comics', $data);
 })->name("comics");
 
-Route::get('/movies', function () {
-    return view('movies');
-})->name("movies");
-
 Route::get('/characters', function () {
-    return view('characters');
+    $data = [
+        "db" => [
+            "pages" => config("db.pages"),
+            "footerLinks" => config("db.footerLinks")
+        ]
+    ];
+    return view('characters', $data);
 })->name("characters");
 
+Route::get('/movies', function () {
+    $data = [
+        "db" => [
+            "pages" => config("db.pages"),
+            "footerLinks" => config("db.footerLinks")
+        ]
+    ];
+    return view('movies', $data);
+})->name("movies");
+
 Route::get('/tv', function () {
-    return view('tv');
+    $data = [
+        "db" => [
+            "pages" => config("db.pages"),
+            "footerLinks" => config("db.footerLinks")
+        ]
+    ];
+    return view('tv', $data);
 })->name("tv");
 
 Route::get('/games', function () {
-    return view('games');
+    $data = [
+        "db" => [
+            "pages" => config("db.pages"),
+            "footerLinks" => config("db.footerLinks")
+        ]
+    ];
+    return view('games', $data);
 })->name("games");
 
 Route::get('/collectibles', function () {
-    return view('collectibles');
+    $data = [
+        "db" => [
+            "pages" => config("db.pages"),
+            "footerLinks" => config("db.footerLinks")
+        ]
+    ];
+    return view('collectibles', $data);
 })->name("collectibles");
 
 Route::get('/videos', function () {
-    return view('videos');
+    $data = [
+        "db" => [
+            "pages" => config("db.pages"),
+            "footerLinks" => config("db.footerLinks")
+        ]
+    ];
+    return view('videos', $data);
 })->name("videos");
 
 Route::get('/fans', function () {
-    return view('fans');
+    $data = [
+        "db" => [
+            "pages" => config("db.pages"),
+            "footerLinks" => config("db.footerLinks")
+        ]
+    ];
+    return view('fans', $data);
 })->name("fans");
 
 Route::get('/news', function () {
-    return view('news');
+    $data = [
+        "db" => [
+            "pages" => config("db.pages"),
+            "footerLinks" => config("db.footerLinks")
+        ]
+    ];
+    return view('news', $data);
 })->name("news");
 
 Route::get('/shop', function () {
-    return view('shop');
+    $data = [
+        "db" => [
+            "pages" => config("db.pages"),
+            "footerLinks" => config("db.footerLinks")
+        ]
+    ];
+    return view('shop', $data);
 })->name("shop");
 
 Route::get('/singleComic', function () {
